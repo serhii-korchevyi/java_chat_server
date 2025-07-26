@@ -1,8 +1,6 @@
 import http_server.HttpService;
 import socket_server.SocketService;
 
-import java.io.IOException;
-
 public class Main {
 
     public static void main(String[] args) {

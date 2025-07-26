@@ -35,7 +35,7 @@ public class ClientConnectionService extends Thread {
                 incomingMessage = this.in.readLine();
                 System.out.println("After read line(" + this.currentTread + "):" + incomingMessage);
 
-                if (incomingMessage != null && incomingMessage.equals("exit")) {
+                if (incomingMessage == null || incomingMessage.equals("exit")) {
                     this.close("exit");
                     break;
                 } else {
